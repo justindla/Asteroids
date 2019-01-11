@@ -5,7 +5,7 @@ library(jsonlite)
 library(httr)
 library(RColorBrewer)
 
-source("apikey.r")
+source("apikey.R")
 
 # Sets up the parameters and queries for the API and
 # GET request

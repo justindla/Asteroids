@@ -4,7 +4,7 @@ library(dplyr)
 library(plotly)
 library(lubridate)
 
-source("apikey.r")
+source("apikey.R")
 
 
 get_graph <- function(date){
