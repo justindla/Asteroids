@@ -117,7 +117,7 @@ get_graphic <- function() {
                        completed$Miss.Distance..km., "km"),
           type = "scatter", mode = "markers", color = completed$name,
           marker = list(size = (as.numeric(completed$Miss.Distance..km.)
-                                / 1000000),
+                                / 1000000),0
                         color = brewer.pal(12, "Set3")),
           symbol = "circle",
           height = 1080) %>%
