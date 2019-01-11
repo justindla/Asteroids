@@ -5,8 +5,6 @@ library(jsonlite)
 library(httr)
 library(RColorBrewer)
 
-
-
 source("apikey.r")
 
 # Sets up the parameters and queries for the API and
@@ -117,7 +115,7 @@ get_graphic <- function() {
                        completed$Miss.Distance..km., "km"),
           type = "scatter", mode = "markers", color = completed$name,
           marker = list(size = (as.numeric(completed$Miss.Distance..km.)
-                                / 1000000),0
+                                / 1000000),
                         color = brewer.pal(12, "Set3")),
           symbol = "circle",
           height = 1080) %>%
